@@ -4,8 +4,7 @@ import { isNil } from "lodash";
 
 export const COMMAND_HANDLER_METADATA = "__command-handler-metadata__";
 export const COMMANDS_HANDLER_METADATA = "__commands-handler-metadata__";
-export const ORIGIN_COMMAND_HANDLER_METADATA =
-  "__origin-command-handler-metadata__";
+// export const ORIGIN_COMMAND_HANDLER_METADATA = "__origin-command-handler-metadata__";
 
 export interface CommandOption {
   /**
@@ -80,8 +79,8 @@ export const Commands =
   (target: any): void =>
     Reflect.defineMetadata(COMMANDS_HANDLER_METADATA, options, target);
 
-export const OriginYargsCommand =
-  (): ClassDecorator =>
-  (target: any): void => {
-    Reflect.defineMetadata(ORIGIN_COMMAND_HANDLER_METADATA, true, target);
-  };
+// export const OriginYargsCommand =
+//   (): ClassDecorator =>
+//   (target: any): void => {
+//     Reflect.defineMetadata(ORIGIN_COMMAND_HANDLER_METADATA, true, target);
+//   };

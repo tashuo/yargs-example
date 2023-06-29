@@ -2,7 +2,7 @@
 import * as yargs from "yargs";
 import { TestCommand } from "./test.command";
 import { basicCommand } from "./basic.command";
-import { Scanner } from "./scaner";
+import { Scanner } from "./scanner";
 
 let command: yargs.Argv = yargs.help();
 
